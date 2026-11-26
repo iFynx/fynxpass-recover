@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: swift build -c release
+      - name: Test
+        run: swift test
+      - name: No network code
+        run: |
+          if grep -rnE 'URLSession|NWConnection|import Network|CFSocket|https?://' Sources; then
+            echo "Network code or a URL found in Sources" >&2
+            exit 1
+          fi

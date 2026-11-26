@@ -8,6 +8,7 @@
 
 <div align="center">
 
+[![CI](https://github.com/iFynx/fynxpass-recover/actions/workflows/ci.yml/badge.svg)](https://github.com/iFynx/fynxpass-recover/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-12B76A.svg)](LICENSE)
 ![Swift 6](https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white)
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-1570EF?logo=apple&logoColor=white)
