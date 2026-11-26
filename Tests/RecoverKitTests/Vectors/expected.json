@@ -1,0 +1,1 @@
+[{"title":"Example Bank","typeID":"login","values":{"password":{"text":"correct horse battery staple"},"urls":{"list":["https:\/\/bank.example"]},"username":{"text":"ada@example.com"}}},{"title":"Wi-Fi","typeID":"note","values":{"notes":{"text":"Network: Home\nKey: 12345678"}}},{"title":"example.com","typeID":"passkey","values":{"rpID":{"text":"example.com"}}}]
